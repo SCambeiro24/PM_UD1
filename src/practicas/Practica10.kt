@@ -16,10 +16,5 @@ fun main() {
     println("suma = ${calculadora.sumar(a, b)}")
     println("resta = ${calculadora.restar(a, b)}")
     println("multiplica = ${calculadora.multiplicar(a, b)}")
-    try {
-        val resultado : Double = calculadora.dividir(a, b).toDouble()
-        println("divide $a / $b = ${"%.2f".format(resultado)}")
-    } catch (e: IllegalArgumentException) {
-        println("Error: ${e.message}")
-    }
+    println("División = ${calculadora.dividir(a, b)}")
 }
